@@ -7,6 +7,8 @@ Atvidade trabalha com o uso da API ExchangeRate-API e utilização de comandos d
 * Status do Projeto
 * Tecnologias utilizadas 
 * Configurações do Repositório
+* Configurações do ExchangeRate-API
+* Arquivos criados
 
 ## Status do projeto
 Projeto em construção 
@@ -33,3 +35,6 @@ Projeto em construção
 Para utilização da API, foi necessário criar uma conta no site:
 <img width="1462" height="680" alt="Captura de tela 2025-08-22 103719" src="https://github.com/user-attachments/assets/71bbf980-aae7-4399-9909-4fd4b974c760" />
 <img width="1255" height="784" alt="Captura de tela 2025-08-22 103803" src="https://github.com/user-attachments/assets/cbedca2e-f201-4745-ab57-5df731cea00e" />
+
+## Arquivos criados 
+
