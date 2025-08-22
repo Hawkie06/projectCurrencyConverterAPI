@@ -41,4 +41,8 @@ Para utilização da API, foi necessário criar uma conta no site:
 ## Arquivos criados 
 - Criação do arquivo que é o endpoint da API; 
 <img width="1264" height="575" alt="Captura de tela 2025-08-22 110953" src="https://github.com/user-attachments/assets/4e80dcf8-7cce-45a9-93df-f30a794a9f5d" />
-- Criação 
+- Criação do arquivo principal;
+ <img width="1345" height="570" alt="Captura de tela 2025-08-22 111223" src="https://github.com/user-attachments/assets/35a2756a-023a-4da4-a310-a99f25ec9c2c" />
+- Criação do arquivo de transferência de dados;
+ 
+- Criação da classe responsável porconfigurar e fornecer uma instância retrofit; 
