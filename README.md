@@ -39,4 +39,4 @@ Para utilização da API, foi necessário criar uma conta no site:
 <img width="1255" height="784" alt="Captura de tela 2025-08-22 103803" src="https://github.com/user-attachments/assets/cbedca2e-f201-4745-ab57-5df731cea00e" />
 
 ## Arquivos criados 
-
+- Criação da Interface
