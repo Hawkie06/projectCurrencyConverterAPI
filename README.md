@@ -39,7 +39,6 @@ Para utilização da API, foi necessário criar uma conta no site:
 <img width="1255" height="784" alt="Captura de tela 2025-08-22 103803" src="https://github.com/user-attachments/assets/cbedca2e-f201-4745-ab57-5df731cea00e" />
 
 ## Arquivos criados 
-- Criação do arquivo que é o endpoint da API;
-  <img width="518" height="192" alt="Captura de tela 2025-08-22 110511" src="https://github.com/user-attachments/assets/2a9000ff-c7ad-477c-97ad-c5518a89900b" />
-- Criação  
-
+- Criação do arquivo que é o endpoint da API; 
+<img width="1264" height="575" alt="Captura de tela 2025-08-22 110953" src="https://github.com/user-attachments/assets/4e80dcf8-7cce-45a9-93df-f30a794a9f5d" />
+- Criação 
