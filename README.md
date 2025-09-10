@@ -61,4 +61,5 @@ Para utilização da API, foi necessário criar uma conta no site:
 ## Implementações nos arquivos
 - ExchangeRateService: Interface que identifica o endpoint da API que será consumida pelo retrofit. Anteriormente, 
 retrofit já estava implementado nesse arquivo, permitindo o uso dos métodos GET e Path. 
-* GET: vai pegar o link da api de conversão de moedas
+* GET: vai pegar a chave e a moeda da API 
+* Path:
