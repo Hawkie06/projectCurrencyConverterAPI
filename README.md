@@ -23,7 +23,7 @@ Projeto em construção
 - Retrofit
 - ArrayAdapter: O adaptador é uma ponte entre o componente da Interface do Usuário (IU) e a fonte de dados. Ele converte dados de fontes de dados em itens de visualização que podem exibir os dados de diferentes maneiras, como listview, gridview, spinner, etc.
 
-Quando temos uma lista de um único tipo de item apoiada por um array, podemos usar ArrayAdapter. Por exemplo, se temos uma lista de contatos telefônicos, países ou nomes, podemos usar ArrayAdapter. É um adaptador simples e comumente usado no Android.
+
 
 
 
