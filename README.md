@@ -54,3 +54,4 @@ Para utilização da API, foi necessário criar uma conta no site:
 <img width="1377" height="556" alt="Captura de tela 2025-08-22 111716" src="https://github.com/user-attachments/assets/107bc38f-7d21-40ef-bf23-8a5ebdbf832a" />
 
 ##Função dos arquivos criados
+- ExchangeRateService: Interface que identifica o endpoint da API que será consumida pelo retrofit
