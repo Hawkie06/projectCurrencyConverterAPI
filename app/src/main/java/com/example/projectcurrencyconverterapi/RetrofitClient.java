@@ -8,7 +8,7 @@ import com.example.projectcurrencyconverterapi.ExchangeRateService;
 public class RetrofitClient {
     // URL base da API que fornece taxas de cambio
 
-    private static final String BASE_URL = "https://vó.exchangerate-api.com/";
+    private static final String BASE_URL = "https://v6.exchangerate-api.com/";
     // Instancia do Retrofit que será usada para fazer as requisições
 
     private static Retrofit retrofit = null;

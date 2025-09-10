@@ -36,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); //Define
+        setContentView(R.layout.activity_main); //Define o layout da atividade
+
+        //Inicializa os componentes da interface
+        spinnerMoedaOrigem = findViewById(R.id.spinnerMoedaOrigem);
+        spinnerMoedaDestino = findViewById(R.id.spinnerMoedaDestino);
+        etValor = findViewById(R.id.etValor);
+        btnConverter = findViewById(R.id.btnConverter);
+        tvResultado = findViewById(R.id.tvResultado);
     }
 }

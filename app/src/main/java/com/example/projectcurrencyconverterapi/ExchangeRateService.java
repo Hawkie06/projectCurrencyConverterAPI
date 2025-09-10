@@ -1,3 +1,5 @@
+//Interface que identifica o endpoint da API que será consumida pelo retrofit
+
 package com.example.projectcurrencyconverterapi;
 
 import retrofit2.Call;
@@ -8,7 +10,7 @@ public interface ExchangeRateService {
     /**
      * Método paara obter taxas de câmbio
      */
-    @GET("/vó/{apikey}/latest/{baseCurrency}")
+    @GET("/v6/{apikey}/latest/{baseCurrency}")
     Call<ExchangeRatesResponse> getExchangeRates(
             @Path("apiKey") String apiKey,
             //Substitui {apiKey} na URL com valor fornecido
