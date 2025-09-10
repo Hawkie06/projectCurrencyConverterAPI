@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Configura os spinners com a lista de moedas
     
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(context:this, android.R.layout.simple_spinner_item, moedas);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, moedas);
 adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);   
 spinnerMoedaOrigem.setAdapter(adapter);
 spinnerMoedaDestino.setAdapter(adapter);
