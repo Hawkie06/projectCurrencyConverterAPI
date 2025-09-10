@@ -9,7 +9,7 @@ Atvidade trabalha com o uso da API ExchangeRate-API e utilização de comandos d
 * [Configurações do Repositório](#Configurações-do-Repositório)
 * [Configurações do ExchangeRate-API](#Configurações-do-ExchangeRate-API)
 * [Arquivos criados](#Arquivos-criados)
-* [Função dos arquivos criados](#Função-dos-arquivos-criados)
+* [Implementações nos arquivos](#Implementações-nos-arquivos)
 
 ## Status do projeto
 Projeto em construção 
@@ -21,7 +21,7 @@ Projeto em construção
 - JAVA
 - JSON
 - Retrofit
-- ArrayAdapter: O adaptador é uma ponte entre o componente da Interface do Usuário (IU) e a fonte de dados. Ele converte dados de fontes de dados em itens de visualização que podem exibir os dados de diferentes maneiras, como listview, gridview, spinner, etc.
+- ArrayAdapter
 
 
 
@@ -58,5 +58,7 @@ Para utilização da API, foi necessário criar uma conta no site:
 - Criação da classe responsável por configurar e fornecer uma instância retrofit;
 <img width="1377" height="556" alt="Captura de tela 2025-08-22 111716" src="https://github.com/user-attachments/assets/107bc38f-7d21-40ef-bf23-8a5ebdbf832a" />
 
-##Função dos arquivos criados
-- ExchangeRateService: Interface que identifica o endpoint da API que será consumida pelo retrofit
+## Implementações nos arquivos
+- ExchangeRateService: Interface que identifica o endpoint da API que será consumida pelo retrofit. Anteriormente, 
+retrofit já estava implementado nesse arquivo, permitindo o uso dos métodos GET e Path. 
+* GET: vai pegar o link da api de conversão de moedas
