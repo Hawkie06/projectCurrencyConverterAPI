@@ -19,6 +19,7 @@ Projeto em construção
 - ExchangeRateAPI
 - JAVA
 - JSON
+- Retrofit
 
 
 ## Configurações do Repositório
