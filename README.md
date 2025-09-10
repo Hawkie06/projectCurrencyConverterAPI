@@ -21,6 +21,10 @@ Projeto em construção
 - JAVA
 - JSON
 - Retrofit
+- ArrayAdapter: O adaptador é uma ponte entre o componente da Interface do Usuário (IU) e a fonte de dados. Ele converte dados de fontes de dados em itens de visualização que podem exibir os dados de diferentes maneiras, como listview, gridview, spinner, etc.
+
+
+
 
 
 
