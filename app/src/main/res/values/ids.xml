@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="Titulo" type="id">Titulo</item>
+    <item name="etValor" type="id">etValor</item>
+    <item name="spinnerMoedaOrigem" type="id">spinnerMoedaOrigem</item>
+    <item name="spinnerMoedaDestino" type="id">spinnerMoedaDestino</item>
+    <item name="btnConverter" type="id">btnConverter</item>
+    <item name="tvResultado" type="id">tvResultado</item>
+</resources>
