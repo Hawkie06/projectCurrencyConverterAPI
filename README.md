@@ -21,7 +21,7 @@ Projeto em construção
 - JAVA
 - JSON
 - Retrofit
-- Array Adapter :
+
 
 
 ## Configurações do Repositório
