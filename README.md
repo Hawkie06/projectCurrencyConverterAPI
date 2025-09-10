@@ -9,6 +9,7 @@ Atvidade trabalha com o uso da API ExchangeRate-API e utilização de comandos d
 * [Configurações do Repositório](#Configurações-do-Repositório)
 * [Configurações do ExchangeRate-API](#Configurações-do-ExchangeRate-API)
 * [Arquivos criados](#Arquivos-criados)
+* [Função dos arquivos criados](#Função-dos-arquivos-criados)
 
 ## Status do projeto
 Projeto em construção 
@@ -19,6 +20,8 @@ Projeto em construção
 - ExchangeRateAPI
 - JAVA
 - JSON
+- Retrofit
+- Array Adapter :
 
 
 ## Configurações do Repositório
@@ -48,5 +51,8 @@ Para utilização da API, foi necessário criar uma conta no site:
 - Criação do arquivo de transferência de dados;
 <img width="1326" height="506" alt="Captura de tela 2025-08-22 111711" src="https://github.com/user-attachments/assets/3e7b3860-e54d-4d25-8868-ad5e94ae3321" />
 
-- Criação da classe responsável porconfigurar e fornecer uma instância retrofit;
+- Criação da classe responsável por configurar e fornecer uma instância retrofit;
 <img width="1377" height="556" alt="Captura de tela 2025-08-22 111716" src="https://github.com/user-attachments/assets/107bc38f-7d21-40ef-bf23-8a5ebdbf832a" />
+
+##Função dos arquivos criados
+- ExchangeRateService: Interface que identifica o endpoint da API que será consumida pelo retrofit

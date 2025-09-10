@@ -1,5 +1,6 @@
 package com.example.projectcurrencyconverterapi;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -44,5 +45,27 @@ public class MainActivity extends AppCompatActivity {
         etValor = findViewById(R.id.etValor);
         btnConverter = findViewById(R.id.btnConverter);
         tvResultado = findViewById(R.id.tvResultado);
-    }
+
+        //Configura os spinners com a lista de moedas
+    
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(context:this, android.R.layout.simple_spinner_item, moedas);
+adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);   
+spinnerMoedaOrigem.setAdapter(adapter);
+spinnerMoedaDestino.setAdapter(adapter);
+
+// Carrega taxas de câmbio da API
+carregarTaxasDeCambio();
+
+//Configura o botão de conversão
+btnConverter.setOnClickListener(View view -> converterMoeda());
+}
+ // Método para carregar taxas de câmbio da API
+
+private void carregarTaxasDeCambio(){   
+
+}
+
+//Método para converter o valor de uma moeda para a outra
+private void converterMoeda(){
+
 }
