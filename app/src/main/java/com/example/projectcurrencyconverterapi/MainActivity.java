@@ -49,24 +49,18 @@ public class MainActivity extends AppCompatActivity {
         //Configura os spinners com a lista de moedas
     
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, moedas);
-adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);   
-spinnerMoedaOrigem.setAdapter(adapter);
-spinnerMoedaDestino.setAdapter(adapter);
+   adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+   spinnerMoedaOrigem.setAdapter(adapter);
+  spinnerMoedaDestino.setAdapter(adapter);
 
 // Carrega taxas de câmbio da API
 carregarTaxasDeCambio();
 
 //Configura o botão de conversão
-btnConverter.setOnClickListener(View view -> converterMoeda());
+btnConverter.setOnClickListener(view -> converterMoeda());
 }
  // Método para carregar taxas de câmbio da API
-
-private void carregarTaxasDeCambio(){   
-
-}
-
-//Método para converter o valor de uma moeda para a outra
-private void converterMoeda(){
+    private void carregarTaxasDeCambio(){
  ExchangeRateService service = RetrofitClient.getInstance();//Obtém a instância do serviço
     Call<ExchangeRatesResponse> call = service.getExchangeRates("2f5802e145f51c95e1e4de2e","USD"); //Faz a chamada da API
 
@@ -83,9 +77,35 @@ private void converterMoeda(){
         }
 
        @Override
-        public void onFailure(call<ExchangeRatesResponse>call, Throwable t ){
+        public void onFailure(Call<ExchangeRatesResponse>call, Throwable t ){
 
+            tvResultado.setText("Erro ns conexão");
+            return;
        }
+
+
     });
- }
+
 }
+    //Método para converter o valor de uma moeda para a outra
+    private void converterMoeda(){
+        String valorTexto = etValor.getText().toString();//Obtém valor digitado pelo usuário
+
+        // Verificar se o valor é valido
+        if (valorTexto.isEmpty()){
+            Toast.makeText(this, "Digite um valor válido", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        String moedaOrigem = spinnerMoedaOrigem.getSelectedItem().toString();//Obtém a moeda de origem
+        String moedaDestino = spinnerMoedaDestino.getSelectedItem().toString();//Obtém a moeda de destino
+        double valor = Double.parseDouble(valorTexto);
+
+        //verifica se as taxas de câmbio estão disponíveis
+        if (taxasDecambio == null || !taxasDecambio.containsKey(moedaOrigem) || taxasDecambio.containsKey(moedaDestino)){
+            tvResultado.setText("Taxas de câmbio indisponíveis");
+            return;
+
+        }
+
+    }
+ }
