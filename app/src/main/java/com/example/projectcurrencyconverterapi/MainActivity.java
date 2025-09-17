@@ -106,6 +106,15 @@ btnConverter.setOnClickListener(view -> converterMoeda());
             return;
 
         }
+          //Obtém as taxas de câmbio para moedas selecionadas
+        double taxaOrigem = taxasDecambio.get(moedaOrigem);
+        double taxaDestino = taxasDecambio.get(moedaDestino);
+
+        //Calcula valor convertido
+        double valorConvertido = (valor / taxaOrigem) * taxaDestino;
+
+        //Exibe o resultado da conversão formatado
+        tvResultado.setText(String.format("Resultado: %.2f %s", valorConvertido, moedaDestino));
 
     }
  }
